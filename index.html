@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <h1>Loading...</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        <!-- About Institute Section -->
+        <div id="about-institute" class="tab-content">
+            <h2>About Institute</h2>
+            <p><strong>Institute Name:</strong> AJ Institute</p>
+            <p><strong>Director:</strong> Jatin Sir</p>
+            <p><strong>Established:</strong> 2016</p>
+            <p><strong>Address:</strong> Your Address Here</p>
+        </div>
+
+        <!-- Video Section -->
+        <div id="video-section" class="tab-content hidden">
+            <h2>Video Section</h2>
+            <input type="password" id="password" placeholder="Enter Password" />
+            <button onclick="checkPassword()">Unlock Videos</button>
+            <div id="video-content" class="hidden">
+                <!-- Class 9 Section -->
+                <div class="class-section">
+                    <h3>Class 9</h3>
+                    <iframe src="https://www.youtube.com/embed/video_id" title="Class 9 Video"></iframe>
+                    <p>Video Title for Class 9</p>
+                </div>
+                <!-- Class 10 Section -->
+                <div class="class-section">
+                    <h3>Class 10</h3>
+                    <iframe src="https://www.youtube.com/embed/video_id" title="Class 10 Video"></iframe>
+                    <p>Video Title for Class 10</p>
+                </div>
+                <!-- Class 11 Section -->
+                <div class="class-section">
+                    <h3>Class 11</h3>
+                    <iframe src="https://www.youtube.com/embed/video_id" title="Class 11 Video"></iframe>
+                    <p>Video Title for Class 11</p>
+                </div>
+                <!-- Class 12 Section -->
+                <div class="class-section">
+                    <h3>Class 12</h3>
+                    <iframe src="https://www.youtube.com/embed/video_id" title="Class 12 Video"></iframe>
+                    <p>Video Title for Class 12</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation Bar -->
+        <div class="bottom-nav">
+            <button onclick="openTab('about-institute')">About Institute</button>
+            <button onclick="openTab('video-section')">Videos</button>
+        </div>
+    </div>
+</body>
+          </html>
